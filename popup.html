@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Server Selector</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 15px;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+    select {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005A9E;
+    }
+    #status {
+      margin-top: 10px;
+      color: green;
+      font-size: 13px;
+      text-align: center;
+      min-height: 15px;
+    }
+  </style>
+</head>
+<body>
+  <label for="serverSelect">Preferred Server:</label>
+  <select id="serverSelect">
+    <option value="vidsrc">vidsrc</option>
+    <option value="netu.tv">netu.tv</option>
+    <option value="voe.sx">voe.sx</option>
+    <option value="byse.sx">byse.sx</option>
+    <option value="vidlink">vidlink</option>
+    <option value="vidstream">vidstream</option>
+    <option value="embed">embed</option>
+    <option value="multiembed">multiembed</option>
+    <option value="moviesclub">moviesclub</option>
+    <option value="primewire">primewire</option>
+  </select>
+
+  <button id="saveBtn">Save Preference</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
