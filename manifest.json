@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Better bombuj si",
+  "version": "1.0",
+
+  "description": "Automatically selects a preferred video server.",
+
+  "permissions": ["storage"],
+
+  "host_permissions": [
+    "https://*.bombuj.si/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.bombuj.si/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
