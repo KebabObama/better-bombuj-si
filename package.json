@@ -1,0 +1,18 @@
+{
+  "name": "better-bombuj-si",
+  "private": true,
+  "scripts": {
+    "postinstall": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
+    "prebuild": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
+    "build": "tsc",
+    "predev": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.2",
+    "@types/chrome": "^0.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
