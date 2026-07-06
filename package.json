@@ -2,10 +2,10 @@
   "name": "better-bombuj-si",
   "private": true,
   "scripts": {
-    "postinstall": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
-    "prebuild": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
+    "postinstall": "mkdir -p dist && cp ./manifest.json ./dist/manifest.json",
+    "prebuild": "mkdir -p dist && cp ./manifest.json ./dist/manifest.json",
     "build": "tsc",
-    "predev": "mkdir -p dist && cp ./manifest.json ./dist/mainfest.json",
+    "predev": "mkdir -p dist && cp ./manifest.json ./dist/manifest.json",
     "dev": "tsc --watch"
   },
   "devDependencies": {
